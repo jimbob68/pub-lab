@@ -11,10 +11,9 @@ class Pub
     return @till -= cash
   end
 
-
-
-
-
+  def can_add_cash_to_till(cash)
+    return @till += cash
+  end
 
 
 
