@@ -6,17 +6,17 @@ require_relative('../drinks.rb')
 
 class TestDrink < Minitest::Test
 
+  def setup
+    @drink = Drink.new("beer", 250)
+  end
+
   def test_can_get_drink_name
-      drink = Drink.new("beer", 250)
-      assert_equal("beer", drink.name)
+    assert_equal("beer", @drink.name)
   end
 
   def test_can_get_price
-    drink = Drink.new("beer", 250)
-    assert_equal(250, drink.price)
+    assert_equal(250, @drink.price)
   end
-
-
 
 
 

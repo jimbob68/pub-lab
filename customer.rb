@@ -7,7 +7,9 @@ attr_reader :name, :wallet
     @wallet = wallet
   end
 
-
+  def can_reduce_cash_in_wallet(cash)
+    return @wallet -= cash
+  end
 
 
 

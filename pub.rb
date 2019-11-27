@@ -7,7 +7,9 @@ class Pub
     @till = till
   end
 
-
+  def can_remove_cash_from_till(cash)
+    return @till -= cash
+  end
 
 
 
