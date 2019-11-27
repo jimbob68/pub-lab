@@ -40,7 +40,7 @@ class TestCustomer < Minitest::Test
 
   def test_customer_does_not_have_enough_money_for_drink
     can_not_afford_drink = @customer.customer_can_not_afford_drink(250)
-    assert_equal(true, can_not_afford_drink)
+    assert_equal(false, can_not_afford_drink)
   end
 
 

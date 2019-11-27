@@ -15,6 +15,11 @@ class Pub
     return @till += cash
   end
 
+  def sell_customer_a_drink(customer, drink)
+    customer.can_add_cash_to_till(drink.price())
+    customer.can_reduce_cash_in_wallet(drink.price())
+  end
+
 
 
 
