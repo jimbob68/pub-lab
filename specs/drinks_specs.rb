@@ -11,6 +11,10 @@ class TestDrink < Minitest::Test
       assert_equal("beer", drink.name)
   end
 
+  def test_can_get_price
+    drink = Drink.new("beer", 250)
+    assert_equal(250, drink.price)
+  end
 
 
 
